@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="to-do-list.css">
+  </head>
+  <body style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 40px; min-height: 100vh; background-image: url('to-do-list-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+    <h1 style="font-family: 'Playlist Script', cursive; color: white">Todo List</h1>
+    <div class="todo-input-grid">
+      <input placeholder="Todo name"
+        class="js-name-input name-input">
+      <input type="date"
+        class="js-due-date-input due-date-input">
+      <button onclick="addTodo();" class="add-todo-button">Add</button>
+    </div>
+
+    <div class="js-todo-list todo-grid"></div>
+
+    <script src="to-do-list.js"></script>
+  </body>
+</html>
